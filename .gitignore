@@ -1,0 +1,169 @@
+# ═══════════════════════════════════════════════════════════════════
+# MedIllustrator-AI v3.1 - Git Ignore Rules
+# ═══════════════════════════════════════════════════════════════════
+
+# ───────────────────────────────────────────────────────────────────
+# Python
+# ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ───────────────────────────────────────────────────────────────────
+# Virtual Environments
+# ───────────────────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+
+# ───────────────────────────────────────────────────────────────────
+# Environment Variables (CRITICAL - NEVER COMMIT)
+# ───────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+*.env.backup
+
+# Keep .env.example
+!.env.example
+
+# ───────────────────────────────────────────────────────────────────
+# Logs
+# ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ───────────────────────────────────────────────────────────────────
+# Cache Directories
+# ───────────────────────────────────────────────────────────────────
+cache/
+*.cache
+.cache/
+
+# ART Trajectories (large files)
+cache/art_trajectories/*.json
+!cache/art_trajectories/.gitkeep
+
+# RULER cache
+cache/ruler/*.json
+!cache/ruler/.gitkeep
+
+# CLIP cache
+cache/clip_cache/
+models/clip_cache/
+
+# ───────────────────────────────────────────────────────────────────
+# Model Files (Large Binary Files)
+# ───────────────────────────────────────────────────────────────────
+models/checkpoints/*.pth
+models/checkpoints/*.pt
+models/production/*.pth
+models/production/*.pt
+models/baseline/*.safetensors
+models/baseline/*.bin
+models/*.h5
+models/*.ckpt
+
+# Keep directory structure
+!models/baseline/.gitkeep
+!models/checkpoints/.gitkeep
+!models/production/.gitkeep
+
+# ───────────────────────────────────────────────────────────────────
+# Training Data (Can be large)
+# ───────────────────────────────────────────────────────────────────
+data/training_images/**/*
+!data/training_images/.gitkeep
+
+data/validation_images/**/*
+!data/validation_images/.gitkeep
+
+data/feedback_data/*.json
+!data/feedback_data/.gitkeep
+
+# AI2D cache
+data/ai2d_cache/
+!data/ai2d_cache/.gitkeep
+
+# ───────────────────────────────────────────────────────────────────
+# Uploaded Files
+# ───────────────────────────────────────────────────────────────────
+uploads/
+*.tmp
+*.temp
+
+# ───────────────────────────────────────────────────────────────────
+# Backup Files
+# ───────────────────────────────────────────────────────────────────
+*.backup
+*.backup[0-9]
+*.old
+*.bak
+*~
+
+# ───────────────────────────────────────────────────────────────────
+# IDE and Editor Files
+# ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# ───────────────────────────────────────────────────────────────────
+# Jupyter Notebooks
+# ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ───────────────────────────────────────────────────────────────────
+# Testing
+# ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ───────────────────────────────────────────────────────────────────
+# Docker
+# ───────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ───────────────────────────────────────────────────────────────────
+# Deployment
+# ───────────────────────────────────────────────────────────────────
+deployment_package/
+
+# ───────────────────────────────────────────────────────────────────
+# OS Files
+# ───────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ═══════════════════════════════════════════════════════════════════
