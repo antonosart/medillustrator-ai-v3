@@ -1,0 +1,30 @@
+{
+  "trajectory_id": "e121b47552dc9b7f",
+  "session_id": "test_1761026817",
+  "timestamp": "2025-10-21T06:06:57.067772",
+  "image_hash": "8be146fb565b79bb5806da1090d236d9",
+  "initial_state": {
+    "session_id": "test_1761026817",
+    "image_data": {
+      "size": 1024
+    },
+    "timestamp": "2025-10-21T06:06:57.067765",
+    "status": "initialized"
+  },
+  "intermediate_states": [],
+  "final_state": {
+    "medical_terms": [
+      "heart"
+    ],
+    "reward_score": 0.4633704317808151,
+    "timestamp": "2025-10-21T06:06:57.170643",
+    "status": "completed"
+  },
+  "agent_executions": [],
+  "metadata": {
+    "timestamp": 1761026817.0676618,
+    "duration_seconds": 0.102886,
+    "num_states": 0,
+    "num_agent_executions": 0
+  }
+}
